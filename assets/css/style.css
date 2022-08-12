@@ -181,6 +181,7 @@ body {
   color: #ff7800;
 }
 
+.social_details a,
 .social_details a:visited {
   color: #fff;
 }
