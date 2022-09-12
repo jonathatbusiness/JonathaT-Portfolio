@@ -8,6 +8,8 @@ btn.onclick = function () {
 };
 
 //Sessions
+
+//HomeDefault
 const homeContent = new Sessions("Hi, I'm Jonatha.", "Contact Me");
 
 const homeSession = `
@@ -17,6 +19,22 @@ const homeSession = `
                 <div class="btnContainer"><span class="btnText">${homeContent.sessionButton}</span></div>
 `;
 
-const main = document.querySelector(".maincontent");
+const mainHome = document.querySelector(".maincontent");
 
-main.innerHTML = homeSession;
+mainHome.innerHTML = homeSession;
+
+//AboutMe
+
+document.querySelector("#aboutJon").addEventListener("click", aboutJon);
+
+function aboutJon() {
+  const aboutMe = new Sessions("", "", "About Me", "This is the text about me");
+  const aboutMeSession = `
+  <header><span class="titleHome">${aboutMe.sessionTitle}</span></header>
+              <div class="description">
+              <p>${aboutMe.sessionDescription}</p>
+              </div>
+  `;
+  const mainAbout = document.querySelector(".maincontent");
+  mainAbout.innerHTML = aboutMeSession;
+}

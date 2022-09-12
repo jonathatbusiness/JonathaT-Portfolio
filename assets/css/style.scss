@@ -212,6 +212,8 @@ body {
   justify-content: center;
   height: 100%;
   padding: 20px;
+  transition-delay: 250ms;
+  transition: all 0.5s ease;
 }
 
 .sidebar.active ~ .home_content {
@@ -224,6 +226,8 @@ body {
   font-weight: bold;
   color: #ff7800;
   margin: 12px;
+  transition-delay: 250ms;
+  transition: all 0.5s ease;
 }
 
 .btnContainer {
@@ -233,6 +237,8 @@ body {
   border: #ff7800 solid 2px;
   text-align: center;
   margin: 10px 0;
+  transition-delay: 250ms;
+  transition: all 0.5s ease;
 }
 
 .btnContactme {
